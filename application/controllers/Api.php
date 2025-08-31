@@ -351,42 +351,12 @@ class Api extends CI_Controller
 			$data['adepto_site'] = htmlspecialchars($this->input->get('adepto_site'));
 		}
 
-		if (htmlspecialchars($this->input->get('adepto_active'))) {
+		if (htmlspecialchars($this->input->get('adepto_processed'))) {
 
-			$data['adepto_active'] = htmlspecialchars($this->input->get('adepto_active'));
+			$data['adepto_processed'] = htmlspecialchars($this->input->get('adepto_processed'));
 		}
 
-		if (htmlspecialchars($this->input->get('adepto_data_created'))) {
-
-			$data['adepto_data_created'] = htmlspecialchars($this->input->get('adepto_data_created'));
-		}
-
-		if (htmlspecialchars($this->input->get('adepto_cve'))) {
-
-			$data['adepto_cve'] = htmlspecialchars($this->input->get('adepto_cve'));
-		}
-
-		if (htmlspecialchars($this->input->get('adepto_cms'))) {
-
-			$data['adepto_cms'] = htmlspecialchars($this->input->get('adepto_cms'));
-		}
-
-		if (htmlspecialchars($this->input->get('adepto_cms_method'))) {
-
-			$data['adepto_cms_method'] = htmlspecialchars($this->input->get('adepto_cms_method'));
-		}
-
-		if (htmlspecialchars($this->input->get('adepto_cms_login'))) {
-
-			$data['adepto_cms_login'] = htmlspecialchars($this->input->get('adepto_cms_login'));
-		}
-
-		if (htmlspecialchars($this->input->get('adepto_cms_password'))) {
-
-			$data['adepto_cms_password'] = htmlspecialchars($this->input->get('adepto_cms_password'));
-		}
-
-		if (htmlspecialchars($this->input->get('adepto_persistence'))) {
+			if (htmlspecialchars($this->input->get('adepto_persistence'))) {
 
 			$data['adepto_persistence'] = htmlspecialchars($this->input->get('adepto_persistence'));
 		}
@@ -396,15 +366,27 @@ class Api extends CI_Controller
 			$data['adepto_persistence_log'] = htmlspecialchars($this->input->get('adepto_persistence_log'));
 		}
 
-		if (htmlspecialchars($this->input->get('adepto_persistence_check'))) {
+			if (htmlspecialchars($this->input->get('adepto_cms'))) {
 
-			$data['adepto_persistence_check'] = htmlspecialchars($this->input->get('adepto_persistence_check'));
+			$data['adepto_cms'] = htmlspecialchars($this->input->get('adepto_cms'));
 		}
 
-		if (htmlspecialchars($this->input->get('adepto_js_check'))) {
+		if (htmlspecialchars($this->input->get('adepto_cms_method'))) {
 
-			$data['adepto_js_check'] = htmlspecialchars($this->input->get('adepto_js_check'));
+			$data['adepto_cms_method'] = htmlspecialchars($this->input->get('adepto_cms_method'));
 		}
+
+			if (htmlspecialchars($this->input->get('adepto_cms_login'))) {
+
+			$data['adepto_cms_login'] = htmlspecialchars($this->input->get('adepto_cms_login'));
+		}
+
+		if (htmlspecialchars($this->input->get('adepto_cms_password'))) {
+
+			$data['adepto_cms_password'] = htmlspecialchars($this->input->get('adepto_cms_password'));
+		}
+
+
 
 		if (htmlspecialchars($this->input->get('is_deleted'))) {
 
