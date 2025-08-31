@@ -337,7 +337,7 @@ class Api extends CI_Controller
 		print_r(json_encode($response));
 	}
 
-	public function update_adeptos_inlines()
+	public function update_adeptos_inline()
 	{
 
 		$response = array();
@@ -421,7 +421,7 @@ class Api extends CI_Controller
 		print_r(json_encode($response));
 	}
 
-	public function update_adeptos_outlines()
+	public function update_adeptos_outline()
 	{
 
 		$response = array();
