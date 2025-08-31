@@ -62,7 +62,7 @@ date_default_timezone_set('America/Sao_Paulo');
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-define('ENVIRONMENT',  'development');
+define('ENVIRONMENT',  'production');
 
 /*
  *---------------------------------------------------------------

@@ -28,7 +28,7 @@ if (ENVIRONMENT == "development") {
     $config['base_url'] = 'http://localhost/hassio22/';
 
 } else  if (ENVIRONMENT == "production") {
-    $config['base_url'] = 'https://wpvalidation.com/';
+    $config['base_url'] = 'https://wpvalidation.com/hassio/';
 
 }
 // $config['base_url'] = 'https://votoparlamentar.com.br';
