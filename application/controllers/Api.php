@@ -370,6 +370,11 @@ class Api extends CI_Controller
 			$data['adepto_cms'] = htmlspecialchars($this->input->get('adepto_cms'));
 		}
 
+		if (htmlspecialchars($this->input->get('adepto_cms_method'))) {
+
+			$data['adepto_cms_method'] = htmlspecialchars($this->input->get('adepto_cms_method'));
+		}
+
 		if (htmlspecialchars($this->input->get('adepto_cms_login'))) {
 
 			$data['adepto_cms_login'] = htmlspecialchars($this->input->get('adepto_cms_login'));
