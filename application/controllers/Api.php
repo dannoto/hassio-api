@@ -80,6 +80,10 @@ class Api extends CI_Controller
 		// $data['adepto_vulnerable'] = htmlspecialchars($this->input->get('adepto_vulnerable'));
 		$data['adepto_cms'] = htmlspecialchars($this->input->get('adepto_cms'));
 		$data['adepto_cms_method'] = htmlspecialchars($this->input->get('adepto_cms_method'));
+
+		$data['adepto_cms_login'] = htmlspecialchars($this->input->get('adepto_cms_login'));
+		$data['adepto_cms_password'] = htmlspecialchars($this->input->get('adepto_cms_password'));
+
 		$data['adepto_data_created']  = date('Y-m-d H:i:s');
 		$data['adepto_cve'] = htmlspecialchars($this->input->get('adepto_cve'));
 		$data['is_deleted'] = 1;
