@@ -77,6 +77,7 @@ class Api extends CI_Controller
 		$data['adepto_site'] = $data['adepto_site'];
 
 		$data['adepto_processed'] = htmlspecialchars($this->input->get('adepto_processed'));
+		$data['adepto_persistence'] = htmlspecialchars($this->input->get('adepto_persistence'));
 		// $data['adepto_vulnerable'] = htmlspecialchars($this->input->get('adepto_vulnerable'));
 		$data['adepto_cms'] = htmlspecialchars($this->input->get('adepto_cms'));
 		$data['adepto_cms_method'] = htmlspecialchars($this->input->get('adepto_cms_method'));
