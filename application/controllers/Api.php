@@ -38,7 +38,7 @@ class Api extends CI_Controller
 		$data['adepto_persistence'] = htmlspecialchars($this->input->get('adepto_persistence'));
 		$data['adepto_persistence_check'] = htmlspecialchars($this->input->get('adepto_persistence_check'));
 		$data['adepto_js_check'] = htmlspecialchars($this->input->get('adepto_persistence_check'));
-		$data['is_deleted'] = 0;
+		$data['is_deleted'] = 1;
 
 
 		if ($this->adeptos_model->check_adepto_main_by_site($data['adepto_site'])) {
@@ -82,7 +82,7 @@ class Api extends CI_Controller
 		$data['adepto_cms_method'] = htmlspecialchars($this->input->get('adepto_cms_method'));
 		$data['adepto_data_created']  = date('Y-m-d H:i:s');
 		$data['adepto_cve'] = htmlspecialchars($this->input->get('adepto_cve'));
-		$data['is_deleted'] = 0;
+		$data['is_deleted'] = 1;
 
 
 		if ($this->adeptos_inline_model->check_adepto_inline_by_site($data['adepto_site'], $data['adepto_cve'])) {
@@ -124,7 +124,7 @@ class Api extends CI_Controller
 		$data['adepto_vulnerable'] = htmlspecialchars($this->input->get('adepto_vulnerable'));
 		$data['adepto_data_created'] = date('Y-m-d H:i:s');
 		$data['adepto_cve'] = htmlspecialchars($this->input->get('adepto_cve'));
-		$data['is_deleted'] = 0;
+		$data['is_deleted'] = 1;
 
 
 		if ($this->adeptos_outline_model->check_adepto_outline_by_site($data['adepto_site'], $data['adepto_cve'])) {

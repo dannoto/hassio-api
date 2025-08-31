@@ -48,7 +48,7 @@ class adeptos_inline_model extends CI_Model
         $this->db->where('id', $adepto_id);
 
         $data = array(
-            'is_deleted' => 0
+            'is_deleted' => 2
         );
 
         return $this->db->update('adeptos_inline', $data);

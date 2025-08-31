@@ -31,7 +31,7 @@ class adeptos_model extends CI_Model
         }
 
 
-        $this->db->where('is_deleted', 0);
+        $this->db->where('is_deleted', 1);
         return $this->db->get('adeptos_main')->result();
     }
 
@@ -44,7 +44,7 @@ class adeptos_model extends CI_Model
 
     public function update_adepto_main($id, $data)
     {
-        
+
         $this->db->where('id', $id);
         return $this->db->update('adeptos_main', $data);
     }
@@ -56,7 +56,7 @@ class adeptos_model extends CI_Model
         $this->db->where('id', $adepto_id);
 
         $data = array(
-            'is_deleted' => 0
+            'is_deleted' => 2
         );
 
         return $this->db->update('adeptos_main', $data);
