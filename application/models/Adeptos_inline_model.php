@@ -25,7 +25,7 @@ class adeptos_inline_model extends CI_Model
             $this->db->where('adepto_cve', $adepto_cve);
         }
 
-        $this->db->where('is_deleted', 0);
+        $this->db->where('is_deleted', 1);
         return $this->db->get('adeptos_inline')->result();
     }
 
