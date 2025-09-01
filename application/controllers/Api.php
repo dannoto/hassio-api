@@ -204,6 +204,11 @@ class Api extends CI_Controller
 			$data['adepto_processed'] = htmlspecialchars($this->input->get('adepto_processed'));
 		}
 
+		if (htmlspecialchars($this->input->get('adepto_persistence'))) {
+
+			$data['adepto_persistence'] = htmlspecialchars($this->input->get('adepto_persistence'));
+		}
+
 		if (htmlspecialchars($this->input->get('adepto_cve'))) {
 
 			$data['adepto_cve'] = htmlspecialchars($this->input->get('adepto_cve'));
