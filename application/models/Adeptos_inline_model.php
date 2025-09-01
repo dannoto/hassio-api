@@ -14,8 +14,13 @@ class adeptos_inline_model extends CI_Model
         return $this->db->get('adeptos_inline')->row_array();
     }
 
-    public function get_adeptos_inlines($adepto_processed = null, $adepto_cve = null)
+    public function get_adeptos_inlines($adepto_processed = null, $adepto_cve = null, $adepto_persistence = null)
     {
+
+         if ($adepto_persistence != null) {
+            $this->db->where('adepto_persistence', $adepto_persistence);
+        }
+
 
         if ($adepto_processed != null) {
             $this->db->where('adepto_processed', $adepto_processed);
