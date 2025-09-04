@@ -14,11 +14,15 @@ class adeptos_outline_model extends CI_Model
         return $this->db->get('adeptos_outline')->row_array();
     }
 
-    public function get_adeptos_outlines($adepto_processed = null, $adepto_cve = null)
+    public function get_adeptos_outlines($adepto_processed = null, $adepto_cve = null,  $adepto_vulnerable)
     {
 
         if ($adepto_processed != null) {
             $this->db->where('adepto_processed', $adepto_processed);
+        }
+
+        if ($adepto_vulnerable != null) {
+            $this->db->where('adepto_vulnerable', $adepto_vulnerable);
         }
 
         if ($adepto_cve != null) {

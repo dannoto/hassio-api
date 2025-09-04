@@ -253,7 +253,7 @@ class Api extends CI_Controller
 			$data['adepto_cve'] = htmlspecialchars($this->input->get('adepto_cve'));
 		}
 
-		if ($res = $this->adeptos_outline_model->get_adeptos_outlines($data['adepto_processed'], $data['adepto_cve'])) {
+		if ($res = $this->adeptos_outline_model->get_adeptos_outlines($data['adepto_processed'], $data['adepto_cve'], $data['adepto_vulnerable'])) {
 
 			$response = array(
 				'status' => true,
